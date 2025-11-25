@@ -1,3 +1,4 @@
+Rank,Company,Ticker,Weight,Industry
 1,Nvidia,NVDA,7.34%,Semiconductors & Semiconductor Equipment
 2,Apple Inc.,AAPL,6.75%,"Technology Hardware, Storage & Peripherals"
 3,Microsoft,MSFT,5.83%,Software
@@ -68,4 +69,5 @@
 451,Zebra Technologies,ZBRA,0.02%,"Electronic Equipment, Instruments & Components"
 473,EPAM Systems,EPAM,0.02%,IT Services
 478,Skyworks Solutions,SWKS,0.02%,Semiconductors & Semiconductor Equipment
+
 501,Solstice Advanced Materials Inc.,SOLS,0.01%,"Electronic Equipment, Instruments & Components"
