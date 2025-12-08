@@ -114,7 +114,7 @@
         /* IFRAME VISUALS */
         .chart-container {
             width: 100%;
-            height: 550px;
+            height: 700px;
             border: none;
             border-radius: 6px;
             box-shadow: 0 2px 10px rgba(0,0,0,0.08);
@@ -156,21 +156,50 @@
     </section>
 
     <section id="faceted">
-        <h2> Faceted Plot</h2>
+        <h2> Macroeconomic Factors vs. Tech Stock Performance Plots</h2>
         <p class="description">Macro indicator alignment vs tech performance over time.</p>
         <iframe class="chart-container" src="faceted.html"></iframe>
     </section>
 
     <section id="bubble">
-        <h2>Bubble Chart</h2>
+        <h2>Animated Bubble Chart</h2>
         <p class="description">Market Cap Vs. Stock Prices Over Time By Company and Trading Volume.</p>
         <iframe class="chart-container" src="bubble.html"></iframe>
+        
+        <div style="margin-top: 40px; padding-top: 30px; border-top: 2px solid var(--blue-soft);">
+            <h3 style="font-size: 22px; color: var(--blue-med); margin-bottom: 20px;">Visualization Details</h3>
+            <p style="font-size: 15px; color: #444; margin-bottom: 15px;">This interactive visualization displays tech stocks from the S&P 500 aggregated by subsector over time:</p>
+            <ul style="font-size: 15px; color: #444; line-height: 1.8; margin-left: 20px; margin-bottom: 30px;">
+                <li><strong>X-axis:</strong> Total market capitalization utilizing a log scale to display a larger range of values</li>
+                <li><strong>Y-axis:</strong> Average stock price weighted by market cap</li>
+                <li><strong>Bubbles:</strong> Each bubble represents an aggregation of tech stocks in the S&P 500 by 6 different subsectors, represented by color</li>
+                <li><strong>Bubble Size:</strong> The size of the bubble represents the total trading volume</li>
+                <li><strong>Animation Controls:</strong> There is a play and pause button to see the different tech sector stocks animated over time; if it is not animated, the month and year displayed at the bottom can be used as a slider (option for animation or static interactive display)</li>
+                <li><strong>Hover Data:</strong> There's also hover data for more detailed information at each point of the animation</li>
+            </ul>
+        </div>
+
+        <div style="margin-top: 30px; padding-top: 30px; border-top: 2px solid var(--blue-soft);">
+            <h3 style="font-size: 22px; color: var(--blue-med); margin-bottom: 20px;">Key Findings</h3>
+            <ul style="font-size: 15px; color: #444; line-height: 1.8; margin-left: 20px;">
+                <li>Over the first decade of the timeline, average stock prices across tech subsectors remain relatively stable, while total market capitalization dips slightly before recovering back to its initial level, indicating steady valuations despite a temporary industry-wide correction.</li>
+                <li>Semiconductors and Technology Hardware show the largest fluctuations in trading volume, reflecting sensitivity to supply-demand shifts, and strong investor reactions to market events</li>
+                <li>Communication Equipment, Electronic Equipment, and IT Services show minimal changes in trading volume and exhibit steady, modest increases in average stock price, suggesting these are stable, low-volatility subsectors.</li>
+                <li>Software demonstrates the strongest growth in average stock price, highlighting investor confidence in scalable, recurring-revenue business models and the sector's pivotal role in digital transformation.</li>
+                <li>Market capitalization grows the most for Software, Semiconductors, and Technology Hardware, indicating these subsectors drive the majority of economic value creation in the tech industry through innovation, demand growth, and market expansion.</li>
+            </ul>
+        </div>
     </section>
 
     <section id="sankey">
         <h2>Sankey Diagram</h2>
         <p class="description">Valuation concentration, sector leadership shifts, expansion cycles.</p>
         <iframe class="chart-container" src="sankey.html"></iframe>
+        
+        <div style="margin-top: 40px; padding-top: 30px; border-top: 2px solid var(--blue-soft);">
+            <h3 style="font-size: 22px; color: var(--blue-med); margin-bottom: 20px;">Visualization Details</h3>
+            <p style="font-size: 15px; color: #444; line-height: 1.8;">Node size is number of companies, stable is stocks with a slope greater than 0 and high growth is stocks with greater than 0.2. Market cap is based on the normalization of each month.</p>
+        </div>
     </section>
 
     <section id="line">
@@ -180,6 +209,17 @@
         class="chart-container" 
         src="viz_5/index.html">
     </iframe>
+    
+    <div style="margin-top: 40px; padding-top: 30px; border-top: 2px solid var(--blue-soft);">
+        <h3 style="font-size: 22px; color: var(--blue-med); margin-bottom: 20px;">Visualization Details</h3>
+        <ul style="font-size: 15px; color: #444; line-height: 1.8; margin-left: 20px;">
+            <li><strong>X-axis:</strong> Days from event start (0 = event start date)</li>
+            <li><strong>Y-axis:</strong> Cumulative Return (%) (represents the total gain or loss of an investment over a specific period)</li>
+            <li><strong>Lines:</strong> Average cumulative returns by company rank group</li>
+            <li><strong>Vertical line:</strong> Event start date (Day 0)</li>
+        </ul>
+        <p style="font-size: 15px; color: #444; line-height: 1.8; margin-top: 15px;"><strong>Rank Groups:</strong> Companies are grouped by market cap ranking (Top 1-10, 11-20, 21-30, 31-40, 41-50, 51+)</p>
+    </div>
     </section>
 
 </body>
