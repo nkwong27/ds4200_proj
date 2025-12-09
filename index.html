@@ -133,22 +133,67 @@
         <p>
             Insights into volatility behavior, macro sensitivity, capital flow, and structural shifts
             in the tech equity landscape — powered by interactive analytics.
-            <br><br>
-            <i>Full written analysis will be added here.</i>
         </p>
-        <a href="#heatmap" class="enter-button">Enter Dashboard</a>
+        <a href="#introduction" class="enter-button">Enter Dashboard</a>
     </div>
 
     <!-- NAV -->
     <div class="navbar">
+        <a href="#introduction">Introduction</a>
         <a href="#heatmap">Heatmap Calendar</a>
         <a href="#faceted">Faceted Plot</a>
         <a href="#bubble">Bubble Chart</a>
         <a href="#sankey">Sankey Diagram</a>
         <a href="#line">Stacked Line Chart</a>
+        <a href="#conclusion">Conclusion</a>
+        <a href="#references">References</a>
     </div>
 
     <!-- SECTIONS -->
+    <section id="introduction">
+        <h2>Introduction</h2>
+        <div style="font-size: 15px; color: #444; line-height: 1.8;">
+            <p style="margin-bottom: 20px;">
+                Technology stocks are an increasingly central pillar of the U.S. economy, with tech-based firms representing nearly 40 percent of the top 500 publicly traded companies and commanding trillion-dollar valuations. 
+                Given the sector's rapid expansion, particularly with the acceleration of artificial intelligence (AI) adoption, its influence on financial markets and the broader economy is growing yearly.
+                This project aims to understand the relationship between macroeconomic conditions and the financial performance of major U.S. technology companies. 
+                By analyzing long-term economic trends alongside tech stock behavior, we seek to identify key relationships and gain insight into how broader economic changes influence the technology market over time.
+            </p>
+            <h3 style="font-size: 20px; color: var(--blue-med); margin-top: 30px; margin-bottom: 20px; font-weight: 600;">Data Sources</h3>
+            
+            <div style="background: var(--bg-main); padding: 20px; border-radius: 8px; border-left: 4px solid var(--blue-med); margin-bottom: 20px;">
+                <p style="margin-bottom: 12px; margin-top: 0;">
+                    <strong style="color: var(--blue-deep); font-size: 16px;">Federal Reserve Economic Data (FRED)</strong>
+                </p>
+                <p style="margin-left: 20px; margin-bottom: 0; color: #666;">
+                    <strong>Attributes:</strong> Date, Real GDP, Inflation Rate, Total Capacity Utilization, Unemployment Rate, Consumer Sentiment, S&P 500 Daily Index Value, Labor Force Participation, and Nominal GDP
+                </p>
+            </div>
+
+            <div style="background: var(--bg-main); padding: 20px; border-radius: 8px; border-left: 4px solid var(--blue-med); margin-bottom: 20px;">
+                <p style="margin-bottom: 12px; margin-top: 0;">
+                    <strong style="color: var(--blue-deep); font-size: 16px;">Yahoo Finance and Investopedia</strong>
+                </p>
+                <p style="margin-left: 20px; margin-bottom: 12px; color: #666;">
+                    This combined dataset provides monthly market and subsector information for leading S&P 500 technology firms.
+                </p>
+                <ul style="margin-left: 40px; margin-bottom: 0; color: #666;">
+                    <li style="margin-bottom: 8px;"><strong>Market Attributes:</strong> Volume, Market Capitalization, Average Low, and Average High for each stock monthly</li>
+                    <li style="margin-bottom: 0;"><strong>Subsector Attributes:</strong> Tech Subsector for each stock</li>
+                </ul>
+            </div>
+
+            <div style="background: var(--bg-main); padding: 20px; border-radius: 8px; border-left: 4px solid var(--blue-med); margin-bottom: 0;">
+                <p style="margin-bottom: 12px; margin-top: 0;">
+                    <strong style="color: var(--blue-deep); font-size: 16px;">Calculated Attributes</strong>
+                </p>
+                <p style="margin-left: 20px; margin-bottom: 0; color: #666;">
+                    Normalized values, total average stock prices, volatility percentages, and cumulative return percentages
+                </p>
+            </div>
+        </div>
+    </section>
+
     <section id="heatmap">
         <h2>Volatility Calendar Heatmap</h2>
         <p class="description">Monthly volatility patterns across ticker selections.</p>
@@ -241,6 +286,31 @@
         </ul>
         <p style="font-size: 15px; color: #444; line-height: 1.8; margin-top: 15px;"><strong>Rank Groups:</strong> Companies are grouped by market cap ranking (Top 1-10, 11-20, 21-30, 31-40, 41-50, 51+)</p>
     </div>
+    </section>
+
+    <section id="conclusion">
+        <h2>Conclusion</h2>
+        <div style="font-size: 15px; color: #444; line-height: 1.8;">
+            <p style="margin-bottom: 20px;">
+                Across event-aligned windows, the tech sector shows distinct crisis-era behavior, but the broader visualizations reveal deeper structural patterns. 
+                While the Dot-Com Bubble produced a sharp downturn and COVID-19 led to strong cumulative gains, the volatility heatmap shows that tech stocks remain consistently more volatile than most sectors even outside recessions. 
+                The bubble charts further highlight how the largest firms captured disproportionate market-cap share over time, especially during recoveries, suggesting a growing concentration of influence. 
+                Meanwhile, the macro-sensitivity faceted plots show that tech's response to shifts in interest rates, inflation, or GDP is far from uniform across firms, reinforcing that performance is shaped by both macro conditions and firm-specific dynamics. 
+                Together, these visuals point to a sector that does not simply react to economic cycles but increasingly shapes them, as rising concentration, persistent volatility, and heterogeneous macro sensitivity push tech toward becoming a driver of broader economic outcomes rather than a follower.
+                <br><br>
+                Future work could compare tech with other S&P 500 sectors to see whether its crisis performance is unique or simply more visible due to scale. 
+                Adding macro variables and predictive tools—machine learning, time-series models, and event-driven forecasting—would strengthen the analysis. 
+                This would move the project from describing market behavior to actively predicting it, helping determine whether tech is driving economic change or still being driven by it.
+            </p>
+        </div>
+    </section>
+
+    <section id="references">
+        <h2>References</h2>
+        <div style="font-size: 15px; color: #444; line-height: 1.8;">
+            <ul style="margin-left: 20px; margin-bottom: 30px;">
+             </ul>
+        </div>
     </section>
 
 </body>
