@@ -291,7 +291,21 @@
         
         <div style="margin-top: 40px; padding-top: 30px; border-top: 2px solid var(--blue-soft);">
             <h3 style="font-size: 22px; color: var(--blue-med); margin-bottom: 20px;">Visualization Details</h3>
-            <p style="font-size: 15px; color: #444; line-height: 1.8;">Node size is number of companies, stable is stocks with a slope greater than 0 and high growth is stocks with greater than 0.2. Market cap is based on the normalization of each month.</p>
+            <ul style="font-size: 15px; color: #444; line-height: 1.8; margin-left: 20px; margin-bottom: 30px;">
+                <li>This is a sankey that goes from growth of a stock to its respective sector to its respective market cap size</li>
+                <li>The widths of the line are the number of companies</li>
+                <li>Growth is based on the slope of the regression of log returns of each month. Companies with a negative slope are declining, slope under .02 is stable, slope greater than .02 is high growth stocks</li>
+                <li>Market caps are based on the average of the normalized marketcaps for each month. Companies with a normalized average of less than 0 are low cap, less than .35 are mid cap and else is large cap.</li>
+                </ul>
+        </div>
+
+        <div style="margin-top: 30px; padding-top: 30px; border-top: 2px solid var(--blue-soft);">
+            <h3 style="font-size: 22px; color: var(--blue-med); margin-bottom: 20px;">Key Findings</h3>
+            <ul style="font-size: 15px; color: #444; line-height: 1.8; margin-left: 20px;">
+                <li>Highest Growth is mainly from Software. This makes sense because Software attributes to many of the advancements in technology.</li>
+                <li>Semiconductors sectors are more distributed in each category. The market caps are divided by 3 in this category. The growth has a good amount in.</li>
+                <li>Electronic components and IT Services have only stable stocks with more mid to high market caps. This shows that these sectors are more stable and have less growth.</li>
+            </ul>
         </div>
     </section>
 
@@ -306,12 +320,23 @@
     <div style="margin-top: 40px; padding-top: 30px; border-top: 2px solid var(--blue-soft);">
         <h3 style="font-size: 22px; color: var(--blue-med); margin-bottom: 20px;">Visualization Details</h3>
         <ul style="font-size: 15px; color: #444; line-height: 1.8; margin-left: 20px;">
+            <li><strong>Line Plot:</strong> Displays the cumulative return of the top interval tech companies of the S&P 500</li>
             <li><strong>X-axis:</strong> Days from event start (0 = event start date)</li>
             <li><strong>Y-axis:</strong> Cumulative Return (%) (represents the total gain or loss of an investment over a specific period)</li>
-            <li><strong>Lines:</strong> Average cumulative returns by company rank group</li>
-            <li><strong>Vertical line:</strong> Event start date (Day 0)</li>
+            <li><strong>Lines:</strong> Each line represents the average cumulative return by company rank group</li>
+            <li><strong>Vertical Line:</strong> Event start date (Day 0)</li>
+            <li><strong>Dropdown:</strong> Allows selection of the economic event (Dot Com Bubble, Great Recession, or COVID-19)</li>
+            <li><strong>Color Coding:</strong> Each color represents an interval tech company of the S&P 500 (Top 1-10, 11-20, 21-30, 31-40, 41-50, 51+)</li>            
         </ul>
-        <p style="font-size: 15px; color: #444; line-height: 1.8; margin-top: 15px;"><strong>Rank Groups:</strong> Companies are grouped by market cap ranking (Top 1-10, 11-20, 21-30, 31-40, 41-50, 51+)</p>
+    </div>
+    <div style="margin-top: 30px; padding-top: 30px; border-top: 2px solid var(--blue-soft);">
+        <h3 style="font-size: 22px; color: var(--blue-med); margin-bottom: 20px;">Key Findings</h3>
+        <ul style="font-size: 15px; color: #444; line-height: 1.8; margin-left: 20px;">
+            <li><strong>Dot Com Bubble:</strong> Cumulative investment follows a bubble pattern from approximately -60 to 40. Companies ranked 51+ were hit the hardest since they were the most likely to be overpriced, while the top 10 companies were affected the least because they were priced more accurately.</li>
+            <li><strong>Great Recession:</strong> Companies ranked 51+ were the most profitable since they were the smallest. The top companies, which held the largest market capitalizations, were hurt the most. These lines closely follow the expected pattern of a recession.</li>
+            <li><strong>COVID-19:</strong> There was a small dip before the event, followed by strong growth after the event occurred. All companies showed relatively consistent performance during this period.</li>
+
+        </ul>
     </div>
     </section>
 
